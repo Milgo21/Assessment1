@@ -1,18 +1,18 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
 }
 .container{
-    /* width: 1440px;
-    height: 90vh; */
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* width: 1440px; */
+    height: 90vh;
+    width: 90vw;
     display: grid;
     box-sizing: border-box;
-    margin: 0 4rem 0 4rem;
+    justify-items: center;
+    align-items: center;
+    /* margin: 4rem 4rem 4rem 4rem; */
     background-color: hsl(226, 43%, 10%);
 
 } 
@@ -30,34 +30,37 @@
     grid-template-areas: 
     "one two three four"
     "one five six seven"
+
 }
-.one{
+.profile img{
+    height: 20%;
+    border: 2px solid white;
+    border-radius: 50px;   
+}
+.one{ 
     grid-area: one;
-    background-color: hsl(236, 100%, 87%);
-    display: flex;
-    justify-content: column;
+
 }
+   
 .two{
     grid-area: two;
-    background-color: hsl(15, 100%, 70%);
+    background-color:hsl(235, 46%, 20%);
+    
+
 }
 .three{
     grid-area: three;
-    background-color: hsl(195, 74%, 62%);
-}
+    }
 .four{
     grid-area: four;
-    background-color: hsl(348, 100%, 68%);
 }
 .five{
     grid-area: five;
-    background-color: hsl(145, 58%, 55%);
-}
+    }
 .six{
     grid-area: six;
-    background-color: hsl(264, 64%, 52%);
-}
+    }
 .seven{
     grid-area: seven;
-    background-color: hsl(43, 84%, 65%);
+   
 }
