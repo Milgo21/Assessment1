@@ -7,7 +7,7 @@
 .container{
     /* width: 1440px; */
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: grid;
     /* box-sizing: border-box; */
     justify-items: center;
@@ -20,21 +20,21 @@
 .content{
     width: 70%;
     height: 80%;
-    border: 2px solid red;
     box-sizing: border-box;
     display: grid;
-    justify-content: center;
+    /* justify-content: space-between; */
     grid-template-columns: repeat(4/1fr);
     grid-template-rows: repeat(2/1fr);
-    gap: 20px;
+    gap: 20px ;
     grid-template-areas: 
     "one two three four"
     "one five six seven"
 
 }
 .one img{
-    border-radius: 45%;
-    width: 45%;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
     border: 2px solid white;
     
 }
@@ -42,29 +42,147 @@
     grid-area: one;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 
+}
+.top-contents{
+    flex: 0.7;
+    background-color: hsl(235, 45%, 61%);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bottom-contents{
+    flex: 0.3;
+    margin-top: -1rem;
+    background-color: hsl(235, 46%, 20%);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bottom-contents > p{
+    color: hsl(235, 45%, 61%);;
+}
+.bottom-contents > p:hover{
+    color:aliceblue;
+    cursor: pointer;
+}
+.name-Jeremy{
+    font-size: 2.5rem;
+    font-weight: normal;
 }
    
 .two{
     grid-area: two;
-    background-color:hsl(235, 46%, 20%);
-    
+    /* background-color:hsl(235, 46%, 20%); */
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid white; */
 
+}
+.contents-two, .contents-three, .contents-four, .contents-five, .contents-six, .contents-seven{
+    /* margin-top: -2rem; */
+    background-color: hsl(235, 46%, 20%);
+    flex: 0.9;
+    margin-top: -1rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+}
+.image-two > img,.image-three > img,.image-four > img,.image-five > img, .image-six > img, .image-seven > img{
+    height: 4rem;
+    width: 4rem
+}
+.image-two{
+    background-color:hsl(15, 100%, 70%) ;
+    flex: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+.image-three{
+    background-color:hsl(195, 74%, 62%);
+    flex: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+.image-four{
+    background-color:hsl(348, 100%, 68%);
+    flex: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+.image-five{
+    background-color:hsl(145, 58%, 55%);
+    flex: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+.image-six{
+    background-color: hsl(264, 64%, 52%);
+    flex: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+.image-seven{
+    background-color: hsl(43, 84%, 65%);
+    flex: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+.contents-one:hover,
+.contents-three:hover, 
+.contents-four:hover,
+.contents-five:hover, 
+.contents-six:hover, 
+.contents-seven:hover,
+.contents-two:hover{
+    background-color:  hsl(235, 45%, 61%);
+    cursor: pointer;
+}
+.time > p{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.common-border-radius{
+    border-radius: 0.7rem;
+}
+.card-text-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .three{
     grid-area: three;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
     }
 .four{
     grid-area: four;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
 }
 .five{
     grid-area: five;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
     }
 .six{
     grid-area: six;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
     }
 .seven{
     grid-area: seven;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
    
 }
